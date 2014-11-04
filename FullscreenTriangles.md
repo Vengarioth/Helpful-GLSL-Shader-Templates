@@ -14,7 +14,7 @@ __Fragment Shader__
 #version 330
 precision highp float;
 
-vec2 ViewportSize; //the size of the viewport, something like 1280, 720
+uniform vec2 ViewportSize; //the size of the viewport, something like 1280, 720
 
 void main(void) {
     vec2 fragmentCoordinate = gl_FragCoord.xy / ViewportSize;
